@@ -1,0 +1,146 @@
+html{
+  font-family: overpass;
+  font-size: 15px;
+  text-align: left;
+}
+
+html{
+    background-color: hsl(216, 12%, 8%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+.sct{
+   background-color: hsl(213, 19%, 18%);
+   height: 45vh;
+   width: 20vw;
+   padding: 30px;
+   border-radius: 15px;
+}
+.text-white{
+    color: white;
+}
+.text-grey{
+    color: hsl(216, 12%, 54%);
+}
+.text-orange{
+    color: hsl(25, 97%, 53%);
+}
+.m-0{
+    color: hsl(217, 12%, 63%);
+    border-radius: 50%;
+}
+.num-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btn{
+    outline: none;
+    color: hsl(217, 12%, 63%);
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background-color: hsla(217, 12%, 63%, 0.1);
+    padding: 10px;
+}
+
+.btn:hover{
+    background-color:  hsl(25, 97%, 53%) ;
+}
+.btn:focus{
+    background-color: hsl(25, 97%, 53%);
+}
+.submit-btn{
+    margin-top: 15px;
+    outline: none;
+    border: none;
+    width: 20vw;
+    padding: 8px;
+    font-size: 0.7em;
+    background-color: hsl(25, 97%, 53%);
+    text-transform: uppercase;
+    border-radius: 20px;
+    letter-spacing: 0.3em;
+}
+.submit-btn:hover{
+    background-color: hsl(217, 12%, 63%);
+    color: black;
+}
+.alert-message{
+    display: none;
+}
+.show-alert .alert-message{
+    display: inline;
+    color: red;
+    font-size: 0.8em;
+}
+/*thank you section*/
+
+.hide-card{
+    display: none;
+}
+.show-card .hide-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: hsl(213, 19%, 18%);
+    height: 45vh;
+    width: 20vw;
+    padding: 30px;
+    border-radius: 15px;
+}
+.show-card .sct{
+    display: none;
+}
+.thank-img{
+    background-image: url("images/illustration-thank-you.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20vh;
+    width: 20vw;
+    background-position: center;
+   
+}
+.selection-text{
+    background-color: hsla(217, 12%, 63%, 0.3);
+    padding: 5px 10px;
+    font-size: 0.8em;
+    border-radius: 20px;
+}
+
+
+/*attribution section*/
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    margin-top: 90px;
+    }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/*mobile section*/
+@media screen and (max-width: 768px) {
+    .sct{
+        width:  75vw;
+        height: 45vh;
+    }
+    .submit-btn{
+        width: 75vw;
+        padding: 10px;
+        margin-top: 15px;
+    }
+    .show-card .hide-card{
+        width:  75vw;
+        height: 45vh;
+    }
+    .thank-img{
+        width: 30vw;
+        height: 30vh;
+    }
+}

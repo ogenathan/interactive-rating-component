@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!--stylesheet-->
+  <link rel="stylesheet" href="index.css">
+  <!--Font styles-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body class="bg">
+
+  <!-- Rating state start -->
+
+  <section class="sct">
+
+    <button class="btn"><img src="images/icon-star.svg" alt="star-logo"> </button>
+
+    <h3 class="text-white">How did we do?</h3>
+
+    <p class="text-grey"> Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p>
+    
+    <div class="num-btns">
+       <button class="btn">1</button>
+       <button class="btn">2</button>
+       <button class="btn">3</button>
+       <button class="btn">4</button>
+       <button class="btn">5</button>
+    </div>
+
+    <p class="alert-message"> Please select a rating</p>
+
+    <button class="submit-btn text-white"> Submit</button>
+   
+
+  </section>
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+ 
+  <section class=" hide-card">
+    <div class="thank-img"> 
+
+    </div>
+    <p class="text-orange selection-text">
+      You selected <span class="rating"></span> out of 5
+    </p>
+
+   <div>
+      <h2 class="text-white">Thank you!</h2>
+      <p class="text-grey">
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don't hesitate to get in touch!
+      </p>
+   </div>
+  </section>
+  <!-- Thank you state end -->
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Nathan Precious</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
